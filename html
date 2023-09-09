@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVR Hotels</title>
+    <link rel="stylesheet" type="text/css" href="./hotel.css">
+    <script src="./hotel.js"></script>
+</head>
+<body class="body1">
+    <center><h1 class="p1">WELCOME TO  MVR Hotels</h1></center>
+    <fieldset style="background-color:rgba(161, 199, 126, 0);margin-left:5%;margin-right:5%;padding:3%">
+    <form id="f1">
+        <label>CUSTOMER NAME :<input type="text" class="i1"  required placeholder="enter name"></label>
+        <label  style="margin-left: 8%;">CHECK IN DATE :<input class="i1" type="date" required placeholder="enter name"></label><br><br><br><br>
+        <label for="i1">TOTAL NO.OF DAYS :<input id="i1" class="i1" type="number" required placeholder="enter no.of days"></label>
+        <label for="i2" style="margin-left: 7.5%;">TOTAL NO.OF PERSONS :
+        <input type="enter no.of persons" required placeholder="enter name" id="i2" class="i1"></label><br><br><br><br>
+        <label for="r1">ROOM TYPE :</label><br><input type="radio" id="r1" name="r1">
+        <label for="r1" style="color: rgb(11, 4, 97) ;">Delux Room</label><br><input type="radio" id="r1" name="r1"><label style="color: rgb(11, 4, 97) ;">Suite Room</label><br><br>
+        <label for="r2">AMENITIES :</label><br><input type="radio" id="r2" name="r2">
+        <label for="r2" style="color: rgb(11, 4, 97) ;">AC</label><br><input type="radio" id="r2" name="r2"><label style="color: rgb(11, 4, 97) ;">Locker</label><br><br>
+        <label>ROOM RATE :</label>
+        <h3 id="rh1">Delux Room:2500/-<br>Suite Room: 4000/-<br>- AC: 1000/-<br>- Locker: 300/-</h3>
+        <label for="a1">ADVANCE PAYMENT :<input class="i1" id="a1" type="number" required placeholder="enter amount"></label>
+        <label  style="margin-left: 7.5%;" for="TRC">TOTAL ROOM COST :</label>
+        <input class="i1"  type="text" id="TRC" readonly><br><br><br><br>
+        <label for="TAC">TOTAL AMENITIES COST:</label>
+        <input class="i1"  type="text" id="TAC" readonly>
+        <label  style="margin-left: 4.5%;" for="TC">TOTAL COST:</label>
+        <input class="i1"  type="text" id="TC" readonly><br><br><br><br>
+         <!-- Balance Amount -->
+        <label for="balance"> REMAINING BALANCE:</label>
+        <input class="i1"  type="text" id="balance" readonly><br><br><br><br>
+          <!-- Additional Charges -->
+        <label>ADDITIONAL CHARGES:</label>
+        <p id="rh1"><b>Up to 2 People: No Change in Cost</b></p>
+        <p id="rh1"><b>Per Day Cost for Extra Person: 1000/-</b></p>
+        <center><button type="submit" id="b1" onclick="save()">Submit</button></center>
+    </form>
+    </fieldset>
+</body>
+</html>
