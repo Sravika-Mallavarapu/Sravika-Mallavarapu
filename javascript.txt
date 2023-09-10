@@ -21,7 +21,7 @@ function save(){
            balance=(TC-a1)+((i2-2)*1000);
         }
         else{
-        const balance = TC - a1;
+        balance = TC - a1;
         }
       
         document.getElementById('TRC').value = TRC;
